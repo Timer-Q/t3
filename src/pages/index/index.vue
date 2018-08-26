@@ -1,10 +1,10 @@
 <template>
-  <selector />
+  <navigation />
 </template>
 
 <script>
 import card from '@/components/card';
-import selector from '@/components/selector/selector';
+import navigation from '@/pages/navigation/navigation';
 
 export default {
   data() {
@@ -16,7 +16,7 @@ export default {
 
   components: {
     card,
-    selector,
+    navigation,
   },
 
   methods: {
