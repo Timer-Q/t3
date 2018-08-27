@@ -1,13 +1,14 @@
 <template>
   <div class="navigator">
-    <div
+    <a
       v-for="(item, index) in navInfo"
+      :href="item.href"
       :class="['navigator-item', item.classes, {'is-actived': activeIndex > index}, {'is-activation': activeIndex === index}]"
       :key="index">
       <p class="navigator-item-title">{{item.title}}</p>
       <p class="navigator-item-header">{{item.header}}</p>
       <p class="navigator-item-triangle"></p>
-    </div>
+    </a>
   </div>
 </template>
 
@@ -19,6 +20,7 @@ export default {
         {
           title: 'step1:',
           header: '选酒店',
+          href: '/pages/chooseHotel/main',
         },
         {
           title: 'step2:',

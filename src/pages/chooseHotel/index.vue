@@ -6,7 +6,7 @@
 export default {
   data() {
     return {
-      msg: 'shooping cart',
+      msg: 'this is page of choose hotel',
     };
   },
 };
