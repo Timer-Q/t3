@@ -1,5 +1,5 @@
 <template>
-  <div>{{msg}}</div>
+  <div class="cart">{{msg}}</div>
 </template>
 
 <script>
@@ -11,3 +11,13 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+@import "../../styles/color.scss";
+
+.cart {
+  background-color: $purple;
+  
+}
+</style>
+
